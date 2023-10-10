@@ -1,0 +1,25 @@
+BEGIN {
+    for (i = 0; i < ARGC; i++)
+        printf "ARGV[%d] = %s\n", i, ARGV[i]
+
+    k = 0
+    while ( k < ARGC ) {
+        printf "ARGV[%d] = %s\n", k, ARGV[k]
+        k++
+    }
+
+    m = 0
+    do {
+        printf "ARGV[%d] = %s\n", m, ARGV[m]
+        m++
+    } while ( m < ARGC )
+    if(m=0) {
+    printf "Stupid"
+    }
+}
+
+END {
+    for (i = 0; i < 10; i++)
+        printf "%d ", i
+    printf "\n"
+}
